@@ -1,4 +1,4 @@
-# Welcome to this small app!
+# Welcome to my nuxt.js project!
 
 This is a small test, to learn how to use Nuxtjs.
 
@@ -14,7 +14,7 @@ cd nuxt_test
 2. Install dependencies:
 
 ```
-npm instal
+npm install
 ```
 
 3. Start the dev server:
@@ -29,13 +29,15 @@ http://localhost:3000
 
 ## 🔧 Technical choices
 
-1. Features and Modules Used:
-- Nuxt Modules:
+**Features and Modules Used:**
+1. Nuxt Modules:
+
 * @nuxt/image - optimized image handling
 * @nuxtjs/color-mode - light/dark theme support
 * @nuxt/fonts - easy font integration
 
-- Project Architecture:
+2.  Project Architecture:
+
 * components/ -reusable components
 * layouts/ - global layouts
 * pages/ - pages with automatic routing
