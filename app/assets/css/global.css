@@ -1,13 +1,15 @@
 /* Mode clair par défaut */
 body {
     background-color: #ffffff;
-    color: rgba(0,0,0,0.8);
+    color: rgba(24, 24, 53, 0.8);
+    --link-color: #1a0dab;
   }
   
   /* Mode sombre */
   .dark-mode body {
-    background-color: #091a28;
+    background-color: #1b5585;
     color: #ebf4f1;
+    --link-color: #4da6ff;
   }
   
   /* Header / Footer */
@@ -33,3 +35,12 @@ body {
     background-color: #1c2b3a;
   }
   
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+  }
+  
+  /* Optionnel : hover */
+  a:hover {
+    opacity: 0.8;
+  }

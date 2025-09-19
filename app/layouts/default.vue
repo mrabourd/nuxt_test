@@ -3,8 +3,8 @@
       <div
         class="header"
       >
-
         <AppHeader />
+
       </div>
         
         <div class="layout">
@@ -51,8 +51,11 @@ export default {
   flex: 1;
   padding: 16px;
 }
+.header  {
+  width: 100%;
+}
 
-.header, .footerfooter {
+.footerfooter {
   padding: 4px;
 }
 

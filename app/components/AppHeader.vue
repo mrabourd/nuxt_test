@@ -3,7 +3,7 @@
     class="header-container"
    >
        <NuxtImg 
-           src="/transparent-nuxt.png" 
+           src="/lemon.png" 
            sizes="30px sm:20px md:70px"
            alt="Nuxt logo"
        />
@@ -36,7 +36,6 @@ const toggleTheme = () => {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: #f0f0f0;
 }
 
 .theme-toggle {

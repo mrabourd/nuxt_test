@@ -1,14 +1,18 @@
 <template>
     <h1>Index Page</h1>
     <NuxtLink to="/about">Go to: 'about' page</NuxtLink>
-    <select 
-        v-model="$colorMode.preference"
-    >
-        <option value="system">System</option>        
-        <option value="light">Light</option>        
-        <option value="dark">Dark</option>        
-        <option value="sepia">Sepia</option>        
-    </select>
+    
+    <div class="select-button">
+
+        <select 
+            v-model="$colorMode.preference"
+        >
+            <option value="system">System</option>        
+            <option value="light">Light</option>        
+            <option value="dark">Dark</option>        
+            <option value="sepia">Sepia</option>        
+        </select>
+    </div>
 </template>
 
 <script setup>
@@ -32,5 +36,9 @@ body {
 .sepia-mode body {
     background-color: #f1e7d0;
     color: #433422;
+}
+
+.select-button {
+    padding-top: 6px;
 }
 </style>
