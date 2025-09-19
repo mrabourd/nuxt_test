@@ -1,4 +1,4 @@
-/* Mode clair par défaut */
+/* Body */
 body {
   font-family: 'Roboto',;
   font-size: 14px;
@@ -7,57 +7,57 @@ body {
   color: rgba(24, 24, 53, 0.8);
   --link-color: #1a0dab;
 }
-  
-/* Mode sombre */
+
+/* Dark mode body */
 .dark-mode body {
-  background-color: #3f3930;
+  background-color: #575757;
   color: #ebf4f1;
-  --link-color: #4da6ff;
+  --link-color: #cee7ff;
 }
-  
-/* Header / Footer */
+
+/* Header, Footer */
 body header {
   background-color: #ffffff;
   color: inherit;
 }
-
 body footer {
   background-color: #1f1f1f;
   color: inherit;
   --link-color: #ffffff;
 }
-  
-/* Mode sombre pour header/footer */
+
+/* Dark mode header/footer */
 .dark-mode header {
-  background-color: #5f5f5f;
+  background-color: #1f1f1f;
   color: #ebf4f1;
 }
 .dark-mode footer {
   background-color: #1f1f1f;
   color: #ebf4f1;
 }
-  
+
 /* Sidebar */
 .layout > :first-child {
   background-color: #ffe787;
 }
-  
-/* Sidebar sombre */
+/* Dark mode Sidebar */
 .dark-mode .layout > :first-child {
-  background-color: #574604;
+  background-color: #524100;
 }
-  
+
+/* Titles */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
   line-height: 1.4;
 }
-  
+
+/* Links */
 a {
   color: var(--link-color);
   text-decoration: underline;
 }
   
-/* Optionnel : hover */
+/* Hover */
 a:hover {
   opacity: 0.8;
 }
