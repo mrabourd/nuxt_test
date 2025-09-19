@@ -7,9 +7,9 @@
            sizes="30px sm:20px md:70px"
            alt="Nuxt logo"
        />
-       <h2>
+       <h1>
            Nuxt js test app
-       </h2>
+       </h1>
    
        <button class="theme-toggle"
            @click="toggleTheme"
@@ -40,7 +40,7 @@ const toggleTheme = () => {
 
 .theme-toggle {
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     background: none;
     border: none;
     padding: 4px 8px;

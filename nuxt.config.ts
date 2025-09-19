@@ -5,8 +5,7 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/global.css'
   ],
-  modules: ['@nuxt/image', '@nuxtjs/color-mode'],
-
+  modules: ['@nuxt/image', '@nuxtjs/color-mode', '@nuxt/fonts'],
   colorMode: {
     preference: 'system',
     fallback: 'light',

@@ -1,46 +1,63 @@
 /* Mode clair par défaut */
 body {
-    background-color: #ffffff;
-    color: rgba(24, 24, 53, 0.8);
-    --link-color: #1a0dab;
-  }
+  font-family: 'Roboto',;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #f6f3ef;
+  color: rgba(24, 24, 53, 0.8);
+  --link-color: #1a0dab;
+}
   
-  /* Mode sombre */
-  .dark-mode body {
-    background-color: #1b5585;
-    color: #ebf4f1;
-    --link-color: #4da6ff;
-  }
+/* Mode sombre */
+.dark-mode body {
+  background-color: #3f3930;
+  color: #ebf4f1;
+  --link-color: #4da6ff;
+}
   
-  /* Header / Footer */
-  body header, body footer {
-    background-color: #f0f0f0;
-    color: inherit;
-  }
+/* Header / Footer */
+body header {
+  background-color: #ffffff;
+  color: inherit;
+}
+
+body footer {
+  background-color: #1f1f1f;
+  color: inherit;
+  --link-color: #ffffff;
+}
   
-  /* Mode sombre pour header/footer */
-  .dark-mode header,
-  .dark-mode footer {
-    background-color: #1c2b3a;
-    color: #ebf4f1;
-  }
+/* Mode sombre pour header/footer */
+.dark-mode header {
+  background-color: #5f5f5f;
+  color: #ebf4f1;
+}
+.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ebf4f1;
+}
   
-  /* Sidebar */
-  .layout > :first-child {
-    background-color: #f0f0f0;
-  }
+/* Sidebar */
+.layout > :first-child {
+  background-color: #ffe787;
+}
   
-  /* Sidebar sombre */
-  .dark-mode .layout > :first-child {
-    background-color: #1c2b3a;
-  }
+/* Sidebar sombre */
+.dark-mode .layout > :first-child {
+  background-color: #574604;
+}
   
-  a {
-    color: var(--link-color);
-    text-decoration: underline;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  line-height: 1.4;
+}
   
-  /* Optionnel : hover */
-  a:hover {
-    opacity: 0.8;
-  }
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+  
+/* Optionnel : hover */
+a:hover {
+  opacity: 0.8;
+}

@@ -1,5 +1,5 @@
 <template>
-    <h1>Index Page</h1>
+    <h2>Index Page</h2>
     <NuxtLink to="/about">Go to: 'about' page</NuxtLink>
     
     <div class="select-button">
@@ -23,20 +23,6 @@ console.log(colorMode.preference)
 </script>
 
 <style>
-body {
-    background-color: #fff;
-    color: rgba(0,0,0,0.8)
-}
-
-.dark-mode body {
-    background-color: #091a28;
-    color: #ebf4f1;
-}
-
-.sepia-mode body {
-    background-color: #f1e7d0;
-    color: #433422;
-}
 
 .select-button {
     padding-top: 6px;
