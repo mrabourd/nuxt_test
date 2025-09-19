@@ -1,17 +1,25 @@
 <template>
-    <div>
+    <div class="app-container">
+      <div
+        class="header"
+      >
+
         <AppHeader />
+      </div>
+        
         <div class="layout">
 
-            <main class="p-4">
-                <slot />
+          <AppSidebar />
+
+          
+          <main class="p-4">
+            <slot />
             </main>
-        <AppSidebar />
 
         </div>
 
 
-        <AppFooter />
+        <AppFooter class="footer" />
     </div>
 </template>
 
@@ -20,15 +28,32 @@ import AppHeader from '~/components/AppHeader.vue'
 import AppFooter from '~/components/AppFooter.vue'
 import AppSidebar from '~/components/AppSidebar.vue'
 
+export default {
+  components: { AppHeader, AppFooter, AppSidebar }
+}
 </script>
 
 <style>
-.layout {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 16px;
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh;
 }
-main {
+
+.layout {
+  display: flex;
+  flex: 1
+}
+
+/* Contenu principal */
+.layout > main {
+  flex: 1;
   padding: 16px;
 }
+
+.header, .footerfooter {
+  padding: 4px;
+}
+
 </style>

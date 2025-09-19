@@ -1,0 +1,35 @@
+/* Mode clair par défaut */
+body {
+    background-color: #ffffff;
+    color: rgba(0,0,0,0.8);
+  }
+  
+  /* Mode sombre */
+  .dark-mode body {
+    background-color: #091a28;
+    color: #ebf4f1;
+  }
+  
+  /* Header / Footer */
+  body header, body footer {
+    background-color: #f0f0f0;
+    color: inherit;
+  }
+  
+  /* Mode sombre pour header/footer */
+  .dark-mode header,
+  .dark-mode footer {
+    background-color: #1c2b3a;
+    color: #ebf4f1;
+  }
+  
+  /* Sidebar */
+  .layout > :first-child {
+    background-color: #f0f0f0;
+  }
+  
+  /* Sidebar sombre */
+  .dark-mode .layout > :first-child {
+    background-color: #1c2b3a;
+  }
+  
