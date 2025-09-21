@@ -37,6 +37,7 @@
                     <X class="icon" />
                 </button>
                 <NuxtLink @click="closeMenu" to="/">Accueil</NuxtLink>
+                <NuxtLink @click="closeMenu" to="/fruits">Fruits</NuxtLink>
                 <NuxtLink @click="closeMenu" to="/About">A propos</NuxtLink>
         
         </nav>

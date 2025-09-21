@@ -1,6 +1,12 @@
 <template>
     <h2>Index Page</h2>
-    <NuxtLink to="/about">Go to: 'about' page</NuxtLink>
+    <div>
+        <NuxtLink to="/about">Go to: 'about' page</NuxtLink>
+    </div>
+
+    <div>
+        <NuxtLink to="/fruits">Go to: 'fruits' page</NuxtLink>
+    </div>
     
     <div class="select-button">
 
