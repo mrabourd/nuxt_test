@@ -3,23 +3,48 @@
         Fruits
     </h2>
 
+    <div 
+        v-if="loading"
+        class="spinner-container"
+    >
+        <div class="spinner"></div>
+    </div>
+
+    <div v-else-if="error">
+        Erreur lors du chargement des fruits
+    </div>
+
     <div
+        v-else
         class="fruit-grid"
-        v-if="data"
     >
         <FruitCard 
-            v-for="fruit in data"
+            v-for="fruit in fruits"
             :key="fruit.name"
             :fruit="fruit"
         />
     </div>
 
-
 </template>
 
 <script setup>
-const { data, error, pending } = await useFetch('https://www.fruityvice.com/api/fruit/all')
+import { ref, onMounted } from 'vue'
 
+const fruits = ref([])
+const loading = ref(true)
+const error = ref(null)
+
+onMounted( async () => {
+    try {
+        fruits.value = await $fetch('/api/fruits')
+    }
+    catch (err) {
+        error.value = err
+    }
+    finally {
+        loading.value = false
+    }
+})
 
 </script>
 
@@ -33,6 +58,29 @@ const { data, error, pending } = await useFetch('https://www.fruityvice.com/api/
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
     padding: 16px;
+}
+
+/* Spinner CSS */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #40c4ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 </style>
