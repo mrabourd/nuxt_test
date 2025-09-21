@@ -32,7 +32,7 @@ http://localhost:3000
 **Features and Modules Used:**
 1. Nuxt Modules:
 
-* @nuxt/image - optimized image handling
+* lucide-vue-next - beautiful and consistent icons
 * @nuxtjs/color-mode - light/dark theme support
 * @nuxt/fonts - easy font integration
 

@@ -5,30 +5,29 @@ body {
   line-height: 1.6;
   background-color: #f6f3ef;
   color: rgba(24, 24, 53, 0.8);
-  --link-color: #1a0dab;
+  --link-color: #927e36;
 }
 
 /* Dark mode body */
 .dark-mode body {
-  background-color: #575757;
+  background-color: #333333;
   color: #ebf4f1;
-  --link-color: #cee7ff;
+  --link-color: #ffdd65;
 }
 
 /* Header, Footer */
 body header {
-  background-color: #ffffff;
+  background-color: #ffdd67;
   color: inherit;
 }
 body footer {
   background-color: #1f1f1f;
   color: inherit;
-  --link-color: #ffffff;
 }
 
 /* Dark mode header/footer */
 .dark-mode header {
-  background-color: #1f1f1f;
+  background-color: #7e775d;
   color: #ebf4f1;
 }
 .dark-mode footer {
@@ -36,19 +35,16 @@ body footer {
   color: #ebf4f1;
 }
 
-/* Sidebar */
-.layout > :first-child {
-  background-color: #ffe787;
-}
-/* Dark mode Sidebar */
-.dark-mode .layout > :first-child {
-  background-color: #524100;
-}
-
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
   line-height: 1.4;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 /* Links */

@@ -9,9 +9,6 @@
         
         <div class="layout">
 
-          <AppSidebar />
-
-          
           <main class="p-4">
             <slot />
             </main>
@@ -26,10 +23,9 @@
 <script>
 import AppHeader from '~/components/AppHeader.vue'
 import AppFooter from '~/components/AppFooter.vue'
-import AppSidebar from '~/components/AppSidebar.vue'
 
 export default {
-  components: { AppHeader, AppFooter, AppSidebar }
+  components: { AppHeader, AppFooter }
 }
 </script>
 
